@@ -1,0 +1,155 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 1;
+    padding: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+/* link border*/
+nav a {
+    margin-right: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    background: none;
+    color: inherit;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+/* Link Hover Effect */
+nav a:hover {
+    background-color: white;
+    color: black; /* Change color to black on hover */
+}
+
+
+
+
+/* light-theme button */
+.nav-button {
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    background: none;
+    color: inherit;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.nav-button:hover {
+    background-color: rgb(165, 166, 189);
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+.static-text {
+    font-family: 'Lemon Milk', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.dynamic-text {
+    font-weight: bold;
+    font-style: 'Lemon Milk' ,italic;
+    animation: typing 3s steps(20, end) infinite alternate;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: rgb(8, 8, 8);
+    color: BlueViolet;
+}
+
+.dark-theme .card {
+    background-color:rgb(209, 209, 219);
+    color: BlueViolet;
+}
+
+.dark-theme footer {
+    color: rgb(255, 255, 255);
+    font-family: 'Lemon Milk', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Light Theme */
+.light-theme {
+    background-color:cyan;
+    color: black;
+}
+
+.light-theme .card {
+    background-color: #333333;
+    color: white;
+}
+
+.light-theme footer {
+    color:black;
+    font-family: 'Lemon Milk', sans-serif;
+    font-weight:bold;
+    font-style: italic;
+}
+
+
+/* Card Style */
+.card {
+    font-family: 'Lemon Milk', sans-serif;
+    font-weight:bold;
+    border-radius: 8px;
+    padding: 2em;
+    margin: 2em auto;
+    width: 60%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Typing Animation */
+@keyframes typing {
+    0% { content: "Baseer"; color: rgb(255, 0, 0); }
+    50% { content: "Software Developer"; color: contrast-color; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .intro-text { font-size: 1.5em; }
+}
