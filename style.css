@@ -59,8 +59,21 @@ nav a:hover {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 8px;
+    background: linear-gradient(135deg,red,blue 50%,transparent 30%);
+    background-size: 250%;
+    background-position: 100% 100%;
+    transition: background 0.5%;
     animation: float 2s ease-in-out infinite alternate;
 }
+.profile-image:hover{
+    background-position: 0% 0%;
+
+}
+
 
 @keyframes float {
     from { transform: translateY(0); }
