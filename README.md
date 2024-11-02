@@ -21,7 +21,7 @@ I'm a passionate software developer currently pursuing my BCA (Bachelor of Compu
 ## Connect with Me
 
 - [LinkedIn](https://www.linkedin.com/in/baseer-s-419713285/)
-- [GitHub]()
+- [GitHub](https://github.com/Baseer-S)
 - [LeetCode](https://leetcode.com/u/Baseer-S/)
 - Email: [baseerofficial0@gmail.com](mailto:baseerofficial0@gmail.com)
 
