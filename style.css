@@ -11,31 +11,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-}
-
-/* link border*/
-nav a {
-    margin-right: 1em;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 20px;
-    border: 2px solid lightgray;
-    background: none;
-    color: inherit;
-    padding: 0.5em 1em;
-    cursor: pointer;
-}
-
-/* Link Hover Effect */
-nav a:hover {
-    background-color: white;
-    color: black; /* Change color to black on hover */
-}
 
 
 
@@ -49,6 +24,7 @@ nav a:hover {
     padding: 0.5em 1em;
     cursor: pointer;
 }
+
 
 /* Button Hover Effect */
 .nav-button:hover {
@@ -100,13 +76,38 @@ nav a:hover {
 
 /* Dark Theme */
 .dark-theme {
-    background-color: rgb(8, 8, 8);
-    color: BlueViolet;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
+.dark-theme header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+.dark-theme nav a {
+    margin-right: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px solid lightgray;
+    background-color:#3a7dff;
+    color: inherit;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    
+}
+.dark-theme a:hover {
+    background-color:#3a7dff;
+
+    color:lightslategray; /* Change color to black on hover */
+}
+
+
 .dark-theme .card {
-    background-color:rgb(209, 209, 219);
-    color: BlueViolet;
+    background-color:#1e1e1e;
+    color: #f5f5f5;
 }
 
 .dark-theme footer {
@@ -119,17 +120,50 @@ nav a:hover {
 
 /* Light Theme */
 .light-theme {
-    background-color:cyan;
+    background: color #f5f5f5;;
     color: black;
 }
+.light-theme header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+.light-theme nav a {
+    margin-right: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px solid rgb(15, 15, 15);
+    background-color:#3bafda;
+    color: inherit;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    
+}
+.light-theme a:hover {
+    background-color:#3bafda;
+
+    color:rgb(239, 241, 243); /* Change color to black on hover */
+}
+
+.light-theme button {
+    border-radius: 20px;
+    border: 2px solid rgb(3, 3, 3);
+    background: none;
+    color: inherit;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
 
 .light-theme .card {
-    background-color: #333333;
-    color: white;
+    background-color: #e3e8ef;
+    color: #1e3a5f;
 }
 
 .light-theme footer {
-    color:black;
+    color:#1e3a5f;
     font-family: 'Lemon Milk', sans-serif;
     font-weight:bold;
     font-style: italic;
