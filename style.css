@@ -1,9 +1,15 @@
 /* General Styles */
+
 * {
     box-sizing: border-box;
     margin: 1;
     padding: 1;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+  
 
 body {
     font-family: Arial, sans-serif;
@@ -85,8 +91,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
+    scroll-behavior: smooth;
 }
-.dark-theme nav a {
+.dark-theme header a {
     margin-right: 1em;
     text-decoration: none;
     font-weight: bold;
@@ -96,6 +103,22 @@ body {
     color: inherit;
     padding: 0.5em 1em;
     cursor: pointer;
+    padding: 1px 6px;
+    font-size: 16px;
+    
+}
+.dark-theme footer a {
+    margin-right: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px solid lightgray;
+    background-color:#3a7dff;
+    color: inherit;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    padding: 6px 14px;
+    font-size: 16px;
     
 }
 .dark-theme a:hover {
@@ -128,8 +151,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
+    scroll-behavior: smooth;
 }
-.light-theme nav a {
+.light-theme header a {
+   
     margin-right: 1em;
     text-decoration: none;
     font-weight: bold;
@@ -137,9 +162,10 @@ body {
     border: 2px solid rgb(15, 15, 15);
     background-color:#3bafda;
     color: inherit;
-    padding: 0.5em 1em;
-    cursor: pointer;
     
+    cursor: pointer;
+    padding: 1px 6px;
+    font-size: 16px;
 }
 .light-theme a:hover {
     background-color:#3bafda;
@@ -168,6 +194,21 @@ body {
     font-weight:bold;
     font-style: italic;
 }
+.light-theme footer a{
+    margin-right: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px solid rgb(15, 15, 15);
+    background-color:#3bafda;
+    color: inherit;
+    
+    cursor: pointer;
+    padding: 6px 14px;
+    font-size: 16px;
+    
+}
+
 
 
 /* Card Style */
@@ -199,4 +240,16 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .intro-text { font-size: 1.5em; }
+}
+@media (min-width: 769px) {
+.nav a{
+        padding: 12px 24px;
+        font-size: 18px; /* Slightly larger for desktop */
+    }
+}
+@media (max-width: 768px) {
+.nav a {
+        padding: 2px 10px;
+        font-size: 14px; /* Smaller font and padding for mobile */
+    }
 }
